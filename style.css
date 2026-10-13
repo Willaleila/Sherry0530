@@ -42,13 +42,22 @@ body {
 
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 canvas {
   background-color: rgba(0, 0, 0, 0);
 }
 
-#GameDiv, #Cocos3dGameContainer, #GameCanvas {
+/* 固定展示尺寸 448×924，居中显示 */
+#GameDiv {
+  width: 448px !important;
+  height: 924px !important;
+  flex: none;
+}
+
+#Cocos3dGameContainer, #GameCanvas {
   width: 100%;
   height: 100%;
 }
